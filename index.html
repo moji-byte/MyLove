@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untuk Kamu 🤍</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<audio id="bg-music" loop><source src="music.mp3" type="audio/mpeg"/></audio>
+
+<!-- ══════════════ OPENING ══════════════ -->
+<section id="opening">
+  <div class="opening-mesh"></div>
+  <div class="opening-bg">
+    <div class="petal petal-1"></div><div class="petal petal-2"></div>
+    <div class="petal petal-3"></div><div class="petal petal-4"></div>
+    <div class="petal petal-5"></div><div class="petal petal-6"></div>
+  </div>
+  <div class="opening-content">
+    <p class="opening-date" id="current-date"></p>
+    <h1 class="opening-greeting">Hai sayang <span class="heart-inline">🤍</span></h1>
+    <p class="opening-sub">Hari ini spesial.</p>
+    <div class="divider-line"></div>
+    <p class="opening-desc">Ada sesuatu yang ingin aku sampaikan,<br/>sebuah cerita kecil tentang kita.</p>
+    <button class="btn-primary" onclick="startStory()">
+      <span>Mulai Cerita Kita</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ══════════════ MAIN ══════════════ -->
+<div id="main-content" style="display:none">
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-brand">Untuk Kamu 🤍</span>
+      <div class="nav-links">
+        <a onclick="scrollTo('timeline')">Kenangan</a>
+        <a onclick="scrollTo('gallery')">Foto</a>
+        <a onclick="scrollTo('letter')">Surat</a>
+        <a onclick="scrollTo('surprise')">Kejutan</a>
+      </div>
+      <button class="music-btn" onclick="toggleMusic()">
+        <span class="music-icon" id="music-icon">♪</span>
+        <span id="music-label">Musik</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════ TIMELINE ══════════════ -->
+  <section id="timeline">
+    <div class="section-header">
+      <p class="section-label">Perjalanan Kita</p>
+      <h2 class="section-title">Kenangan yang Kita Ukir</h2>
+      <p class="section-sub">Setiap momen bersamamu adalah halaman cerita yang paling aku suka.</p>
+    </div>
+    <div class="timeline-container">
+      <div class="timeline-item" data-aos>
+        <div class="timeline-dot"><span>01</span></div>
+        <div class="timeline-card">
+          <div class="timeline-tag">Awal Segalanya</div>
+          <h3 class="timeline-title">Pertama Kali Kenal</h3>
+          <p class="timeline-date"><!-- Isi tanggal --></p>
+          <p class="timeline-text">Saat itu aku tidak tahu bahwa pertemuan biasa itu akan mengubah segalanya. Kamu datang dengan senyum yang tidak bisa aku lupakan sampai sekarang.</p>
+        </div>
+      </div>
+      <div class="timeline-item reverse" data-aos>
+        <div class="timeline-dot"><span>02</span></div>
+        <div class="timeline-card">
+          <div class="timeline-tag">Momen Pertama</div>
+          <h3 class="timeline-title">Pertama Kali Jalan Bersama</h3>
+          <p class="timeline-date"><!-- Isi tanggal --></p>
+          <p class="timeline-text">Waktu kita pertama kali ketemu, aku merasa sangat nervous banget. tapi bersamamu aku bisa merasa sangat nyaman bahkan kita bisa sampe pagi.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos>
+        <div class="timeline-dot"><span>03</span></div>
+        <div class="timeline-card">
+          <div class="timeline-tag">Tertawa Bersama</div>
+          <h3 class="timeline-title">Momen-Momen Lucu Kita</h3>
+          <p class="timeline-date"><!-- Isi tanggal --></p>
+          <p class="timeline-text">saat sayang ngambek sayang pasti gamau disentuh, itu gemes banget walo aku sambil gemeter hadapin kamu.</p>
+        </div>
+      </div>
+      <div class="timeline-item reverse" data-aos>
+        <div class="timeline-dot"><span>04</span></div>
+        <div class="timeline-card">
+          <div class="timeline-tag">Melewati Badai</div>
+          <h3 class="timeline-title">Masa-Masa Sulit</h3>
+          <p class="timeline-date"><!-- Isi tanggal --></p>
+          <p class="timeline-text">Tidak semua hari indah, tapi kamu selalu ada di setiap badai yang datang. Terima kasih sudah memilih untuk tetap di sini, bersamaku.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos>
+        <div class="timeline-dot"><span>05</span></div>
+        <div class="timeline-card">
+          <div class="timeline-tag">Impian Kita</div>
+          <h3 class="timeline-title">Harapan ke Depan</h3>
+          <p class="timeline-date">Masa Depan ✦</p>
+          <p class="timeline-text">Banyak hal yang ingin kita jalani bersama. Aku ingin menulis lebih banyak cerita denganmu, pergi ke tempat-tempat baru, dan terus tumbuh bersamamu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ GALLERY ══════════════ -->
+  <section id="gallery">
+    <div class="section-header">
+      <p class="section-label">Abadi dalam Gambar</p>
+      <h2 class="section-title">Foto Kita</h2>
+      <p class="section-sub">Setiap foto menyimpan cerita yang tidak akan pernah bisa kita ganti.</p>
+    </div>
+    <div class="gallery-item tall" onclick="openLightbox(this)">
+  <img src="images/foto1.jpg" alt="Foto Kita 1" />
+  <div class="gallery-overlay"><span>Lihat</span></div>
+</div>
+
+<div class="gallery-item" onclick="openLightbox(this)">
+  <img src="images/foto2.jpg" alt="Foto Kita 2" />
+  <div class="gallery-overlay"><span>Lihat</span></div>
+</div>
+
+<div class="gallery-item" onclick="openLightbox(this)">
+  <img src="images/foto3.jpg" alt="Foto Kita 3" />
+  <div class="gallery-overlay"><span>Lihat</span></div>
+</div>
+
+<div class="gallery-item wide" onclick="openLightbox(this)">
+  <img src="images/foto4.jpg" alt="Foto Kita 4" />
+  <div class="gallery-overlay"><span>Lihat</span></div>
+</div>
+
+<div class="gallery-item" onclick="openLightbox(this)">
+  <img src="images/foto5.jpg" alt="Foto Kita 5" />
+  <div class="gallery-overlay"><span>Lihat</span></div>
+</div>
+
+<div class="gallery-item" onclick="openLightbox(this)">
+  <img src="images/foto6.jpg" alt="Foto Kita 6" />
+  <div class="gallery-overlay"><span>Lihat</span></div>
+</div>
+    </div>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <button class="lightbox-close">✕</button>
+      <img id="lightbox-img" src="" alt=""/>
+    </div>
+  </section>
+
+  <!-- ══════════════ LETTER ══════════════ -->
+  <section id="letter">
+    <div class="section-header">
+      <p class="section-label">Dari Hati</p>
+      <h2 class="section-title">Surat Untukmu</h2>
+      <p class="section-sub">Ada kata-kata yang lebih mudah kutulis daripada kuucapkan.</p>
+    </div>
+    <div class="letter-wrapper">
+      <div class="letter-envelope" id="letter-envelope" onclick="openLetter()">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body">
+          <div class="envelope-seal">🤍</div>
+          <p class="envelope-hint">Klik untuk membuka</p>
+        </div>
+      </div>
+      <div class="letter-paper" id="letter-paper">
+        <div class="letter-paper-inner">
+          <div class="letter-deco-top">✦ ✦ ✦</div>
+          <p class="letter-greeting">Sayang,</p>
+          <div class="letter-body">
+            <p>Di hari yang spesial ini, aku ingin sayang tahu betapa berartinya kamu bagiku. Setiap hari bersamamu adalah hadiah yang tidak pernah aku minta, tapi selalu aku syukuri.</p>
+            <p>sayang adalah orang yang membuatku percaya bahwa hal-hal indah di dunia ini nyata adanya. Senyummu, tawamu, bahkan di saat kamu sedang kesal — semuanya aku cintai.</p>
+            <p>Terima kasih sudah hadir, sudah mau mengenal aku lebih dalam dari yang aku kira seseorang bisa. Terima kasih sudah bersabar, sudah mau bertahan di setiap momen yang tidak mudah.</p>
+            <p>Di hari ulang tahun sayang ini, doaku hanya satu: semoga sayang selalu bahagia — dan semoga aku selalu bisa jadi bagian dari kebahagiaanmu itu.</p>
+            <p>Aku mencintaimu, kemarin, hari ini, dan semua hari yang belum datang.</p>
+          </div>
+          <p class="letter-closing">Selalu milikmu,<br/><em>Yang menyayangimu 🤍</em></p>
+          <div class="letter-deco-bottom">✦</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SURPRISE ══════════════ -->
+  <section id="surprise">
+    <div class="section-header">
+      <p class="section-label">Ada Satu Lagi</p>
+      <h2 class="section-title">Kejutan Kecil</h2>
+      <p class="section-sub">Karena aku tidak pernah bisa cukup menunjukkan betapa aku peduli.</p>
+    </div>
+    <div class="surprise-center">
+      <button class="btn-surprise" id="btn-surprise" onclick="triggerSurprise()">
+        <span>Satu Hal Lagi</span>
+        <span class="gift-icon">🎁</span>
+      </button>
+      <p class="surprise-hint">Tekan kalau kamu berani 😊</p>
+    </div>
+    <div id="surprise-message" class="surprise-message" style="display:none">
+      <div class="surprise-inner">
+        <div class="surprise-emoji">🤍</div>
+        <h3>Kamu adalah rumahku.</h3>
+        <p>Di manapun kamu berada, di situlah tempat yang paling aku mau pulang.</p>
+      </div>
+    </div>
+    <div id="particles-container"></div>
+  </section>
+
+  <!-- ══════════════ ENDING ══════════════ -->
+  <section id="ending">
+    <div class="ending-bg-petals">
+      <div class="ep ep-1"></div><div class="ep ep-2"></div><div class="ep ep-3"></div>
+    </div>
+
+    <!-- STEP 1: Isi harapan dulu -->
+    <div id="step-1" class="step-panel">
+      <p class="ending-label">Sebelum kita tiup lilinnya…</p>
+      <h2 class="ending-big-title">Tulis harapanmu<br/>terlebih dahulu</h2>
+      <p class="ending-subtitle">Bisikkan pada bintang sebelum api padam 🌙</p>
+      <div class="wish-form">
+        <div class="wish-textarea-wrap">
+          <textarea id="wish-input" class="wish-textarea"
+            placeholder="Tuliskan harapanmu di hari ulang tahun ke-25 ini…"
+            maxlength="300"
+            oninput="updateWishCount(this)"></textarea>
+          <div class="wish-count"><span id="wish-chars">0</span>/300</div>
+        </div>
+        <button class="btn-primary btn-to-cake" id="btn-to-cake" onclick="goToCake()" disabled>
+          <span>Lanjut Tiup Lilin</span>
+          <span>🎂</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- STEP 2: Kue & tiup lilin -->
+    <div id="step-2" class="step-panel" style="display:none">
+      <p class="ending-label">Selamat Ulang Tahun</p>
+      <p class="ending-label">Nur Azizah Habibah</p>
+      <h2 class="ending-big-title" id="ending-partner-name">Sayang 🤍</h2>
+      <p class="ending-age-badge">Happy Birthday ke-25 🎉</p>
+
+      <!-- CAKE SVG -->
+      <div class="cake-scene">
+        <!-- Candles -->
+        <div class="candles-row" id="candles-row">
+          <div class="candle-unit" id="c0"><div class="c-smoke" id="s0"></div><div class="c-flame" id="f0"><div class="flame-inner"></div></div><div class="c-wax"></div></div>
+          <div class="candle-unit" id="c1"><div class="c-smoke" id="s1"></div><div class="c-flame" id="f1"><div class="flame-inner"></div></div><div class="c-wax"></div></div>
+          <div class="candle-unit" id="c2"><div class="c-smoke" id="s2"></div><div class="c-flame" id="f2"><div class="flame-inner"></div></div><div class="c-wax"></div></div>
+          <div class="candle-unit" id="c3"><div class="c-smoke" id="s3"></div><div class="c-flame" id="f3"><div class="flame-inner"></div></div><div class="c-wax"></div></div>
+          <div class="candle-unit" id="c4"><div class="c-smoke" id="s4"></div><div class="c-flame" id="f4"><div class="flame-inner"></div></div><div class="c-wax"></div></div>
+        </div>
+        <!-- Cake layers -->
+        <div class="cake-body">
+          <div class="cake-layer cake-layer-top">
+            <div class="cake-frosting-top"></div>
+            <div class="cake-drips">
+              <div class="drip"></div><div class="drip"></div><div class="drip"></div>
+              <div class="drip"></div><div class="drip"></div>
+            </div>
+            <div class="cake-deco-row">
+              <span class="cdot"></span><span class="cdot cdot-b"></span><span class="cdot"></span>
+              <span class="cdot cdot-b"></span><span class="cdot"></span>
+            </div>
+          </div>
+          <div class="cake-layer cake-layer-mid">
+            <div class="cake-stripe"></div>
+          </div>
+          <div class="cake-layer cake-layer-bot"></div>
+          <div class="cake-plate-shadow"></div>
+        </div>
+      </div>
+
+      <!-- Blow button -->
+      <button class="btn-blow" id="btn-blow" onclick="blowAllCandles()">
+        <span class="blow-icon">💨</span>
+        <span>Tiup Lilinnya!</span>
+      </button>
+      <p class="blow-hint">Sekali klik, semua lilin akan padam ✨</p>
+    </div>
+
+    <!-- STEP 3: Harapan terkirim -->
+    <div id="step-3" class="step-panel" style="display:none">
+      <div class="wish-smoke-row">
+        <div class="big-smoke bs1"></div>
+        <div class="big-smoke bs2"></div>
+        <div class="big-smoke bs3"></div>
+      </div>
+      <div class="wish-sent-icon">🌙</div>
+      <div class="wish-stars-row">
+        <span class="wstar">✦</span><span class="wstar wstar-lg">✦</span><span class="wstar">✦</span>
+      </div>
+      <p class="ending-label">Harapanmu</p>
+      <div class="wish-display-card" id="wish-display"></div>
+      <p class="wish-sent-note">Semesta sudah mendengar. Semoga semua terwujud 🤍</p>
+      <div class="wish-divider"></div>
+      <p class="ending-quote-small">"Aku percaya harapan yang tulus<br/>selalu menemukan jalannya."</p>
+      <button class="btn-replay" onclick="replayStory()">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 1 0 .49-5"/></svg>
+        Mulai Lagi dari Awal
+      </button>
+    </div>
+
+    <div id="end-particles"></div>
+  </section>
+
+</div><!-- /main-content -->
+
+<div id="page-curtain"></div>
+<div id="scroll-bar"></div>
+<script src="script.js"></script>
+</body>
+</html>
